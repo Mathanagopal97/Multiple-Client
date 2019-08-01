@@ -1,6 +1,5 @@
 import java.io.*; 
 import java.net.*; 
-import java.util.Scanner; 
   
 // Client class 
 public class Client3  
@@ -8,9 +7,7 @@ public class Client3
     public static void main(String[] args) throws IOException  
     { 
         try
-        { 
-            Scanner scn = new Scanner(System.in); 
-              
+        {             
             // getting localhost ip 
             InetAddress ip = InetAddress.getByName("localhost"); 
       
@@ -21,6 +18,7 @@ public class Client3
             DataInputStream dis = new DataInputStream(s.getInputStream()); 
             DataOutputStream dos = new DataOutputStream(s.getOutputStream());
             dos.writeUTF("Client3");
+            String tosend = "";
             dos = null;
       
             // the following loop performs the exchange of 
@@ -34,18 +32,19 @@ public class Client3
                   
                 // If client sends exit,close this connection  
                 // and then break from the while loop 
-                // if(tosend.equals("Exit")) 
-                // { 
-                //     System.out.println("Closing this connection : " + s); 
-                //     s.close(); 
-                //     System.out.println("Connection closed"); 
-                //     break; 
-                // } 
+                if(tosend.equals("Exit")) 
+                { 
+                    System.out.println("Closing this connection : " + s); 
+                    s.close(); 
+                    System.out.println("Connection closed"); 
+                    break; 
+                } 
                   
                 // printing date or time as requested by client 
                 String received = dis.readUTF(); 
                 System.out.println(received); 
             } 
+            
               
             // closing resources 
             // scn.close(); 

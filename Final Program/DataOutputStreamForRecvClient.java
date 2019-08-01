@@ -1,6 +1,4 @@
 import java.io.*; 
-import java.net.*; 
-import java.util.Scanner; 
 class DataOutputStreamForRecvClient{
 
     static DataOutputStream dosForRecvClient = null;

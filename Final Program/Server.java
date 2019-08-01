@@ -1,5 +1,4 @@
-import java.io.*; 
-import java.text.*; 
+import java.io.*;  
 import java.util.*; 
 import java.net.*; 
   
@@ -59,7 +58,8 @@ public class Server
             } 
             catch (Exception e){ 
                 s.close(); 
-                e.printStackTrace(); 
+                e.printStackTrace();
+                ss.close(); 
             } 
         } 
     } 
