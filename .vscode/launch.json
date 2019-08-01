@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client",
+            "request": "launch",
+            "mainClass": "Client"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client1",
+            "request": "launch",
+            "mainClass": "Client1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client2",
+            "request": "launch",
+            "mainClass": "Client2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client3",
+            "request": "launch",
+            "mainClass": "Client3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Server",
+            "request": "launch",
+            "mainClass": "Server"
+        }
+    ]
+}
